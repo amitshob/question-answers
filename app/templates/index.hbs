@@ -3,6 +3,13 @@
 <p>
   We hope you get all your questions answered here.
 </p>
+
+<ul>
+  {{#each model as |question|}}
+    {{question-tile question=question}}
+  {{/each}}
+</ul>
+
 {{#link-to 'about'}}About{{/link-to}}
 {{#link-to 'contact'}}Click here to contact us.{{/link-to}}
 {{outlet}}
