@@ -1,4 +1,6 @@
 
-<li>{{question.questionContent}} by {{question.author}}</li>
+<li>{{question.questionContent}} by {{question.author}}
+   <button {{action 'delete' question}}>Delete</button>
+</li>
 
 {{yield}}
